@@ -9,12 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
-      # Step 1: Checkout the code
+    steps:      
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 3: Connect to VPS and deploy
       - name: SSH into VPS and deploy
         uses: appleboy/ssh-action@v0.1.7
         with:
